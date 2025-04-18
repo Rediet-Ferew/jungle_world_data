@@ -161,7 +161,7 @@ def get_weekly_layout():
 # Function to generate page layouts dynamically
 def get_insights_layout():
     return html.Div([
-        html.H1("Monthly CRM Report)"),
+        html.H1("Monthly CRM Report"),
         html.H2("Monthly Breakdown Table"),
         dash_table.DataTable(
             columns=[{"name": col, "id": col} for col in monthly_df.columns],
