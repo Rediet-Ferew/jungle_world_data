@@ -41,7 +41,7 @@ def get_data():
             Bnow__Booking__c.Bnow__All_Products_Processed__c >= {start_date_str}
             AND Bnow__Booking__c.Bnow__All_Products_Processed__c <= {current_time_str}
             AND Bnow__Booking__c.Bnow__Status__c IN ('Booked', 'Cancelled', 'Checked In', 'Moved', 'Not Paid', 'Parked', 'Pending', '')
-            AND Bnow__Booking__c.Bnow__Site_Name__c = 'Jungle World - Select Date'
+            AND Bnow__Booking__c.Bnow__Site_Name__c = 'Jungle World'
     """)
     return results
 
