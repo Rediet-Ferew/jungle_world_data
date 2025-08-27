@@ -11,9 +11,10 @@ from salesforce_data import get_dataframe, get_data
 # Function to load data
 def load_data():
     results = get_data()
-    df = get_dataframe(results)
-    monthly_data = monthly_breakdown(df)
-    weekly_data = weekly_breakdown(df)
+    df = get_dataframe(results)[0]
+    df_original = get_dataframe(results)[1]
+    monthly_data = monthly_breakdown(df, df_original)
+    weekly_data = weekly_breakdown(df, df_original)
 
 
     data = {
